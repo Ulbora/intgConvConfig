@@ -3,11 +3,11 @@ package intgconvconf
 import (
 	"encoding/json"
 	"os"
-	//"fmt"
-	"path/filepath"
-	"io/ioutil"
-)
 
+	//"fmt"
+	"io/ioutil"
+	"path/filepath"
+)
 
 /*
  Copyright (C) 2019 Ulbora Labs LLC. (www.ulboralabs.com)
@@ -30,16 +30,15 @@ import (
 */
 
 //JSONConvConf JSONConvConf
-type JSONConvConf struct{
-
+type JSONConvConf struct {
 }
 
 //GetSpfConversion GetSpfConversion
-func (c *JSONConvConf)GetSpfConversion(dir string) *map[string]SpfConfFile{
-	var rtn = make(map[string]SpfConfFile) 
+func (c *JSONConvConf) GetSpfConversion(dir string) *map[string]SpfConfFile {
+	var rtn = make(map[string]SpfConfFile)
 	var conFigDirs []ConfDir
 	files, err := ioutil.ReadDir(dir)
-	if err == nil{
+	if err == nil {
 		for _, file := range files {
 			//fmt.Println("file name: ", file.Name())
 			if file.IsDir() {
@@ -53,11 +52,11 @@ func (c *JSONConvConf)GetSpfConversion(dir string) *map[string]SpfConfFile{
 			//fmt.Println("sdirname: ", sdirname)
 			jsonFile, err := os.Open(sdirname + string(filepath.Separator) + "config.json")
 			defer jsonFile.Close()
-			if err == nil{
+			if err == nil {
 				var cf SpfConfFile
 				//fmt.Println("jsonFile binary: ", jsonFile)
 				byteValue, _ := ioutil.ReadAll(jsonFile)
-				json.Unmarshal(byteValue, &cf)				
+				json.Unmarshal(byteValue, &cf)
 				rtn[cfgd.Name] = cf // = append(rtnFiles, cf)
 				// fmt.Println("jsonFile: ", cf)
 				// fmt.Println("CfDirectory: ", cf.CfDirectory)

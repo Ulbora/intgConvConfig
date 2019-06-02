@@ -1,10 +1,5 @@
 package intgconvconf
 
-import (
-	
-)
-
-
 /*
  Copyright (C) 2019 Ulbora Labs LLC. (www.ulboralabs.com)
  All rights reserved.
@@ -26,10 +21,9 @@ import (
 */
 
 //SpfConvConf SpfConvConf
-type SpfConvConf interface{
+type SpfConvConf interface {
 	GetSpfConversion(dir string) *map[string]SpfConfFile
 }
-
 
 //ConfFile ConfFile
 type ConfFile struct {
@@ -43,20 +37,17 @@ type ConfDir struct {
 	Files []ConfFile
 }
 
-
 //SpfConfFile SpfConfFile
-type SpfConfFile struct{
-	CfDirectory string `json:"cfDirectory"`
-	Distributor string `json:"distributor"`
-	SpfFields []SpfField `json:"spfFields"`
+type SpfConfFile struct {
+	CfDirectory string     `json:"cfDirectory"`
+	Distributor string     `json:"distributor"`
+	SpfFields   []SpfField `json:"spfFields"`
 }
-
 
 //SpfField SpfField
-type SpfField struct{
-	SpfKey string `json:"spfKey"`
-	CartKey string `json:"cartKey"`
-	Prefix string `json:"prefix"`
+type SpfField struct {
+	SpfKey     string   `json:"spfKey"`
+	CartKey    string   `json:"cartKey"`
+	Prefix     string   `json:"prefix"`
 	SpfSubKeys []string `json:"spfSubKeys"`
 }
-
