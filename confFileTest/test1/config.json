@@ -1,0 +1,39 @@
+{
+    "distributor": "test1ds",
+    "cfDirectory": "test1",
+    "spfFields": [
+        {
+            "spfKey": "SKURcrd",
+            "cartKey": "id",
+            "prefix": "",
+            "spfSubKeys": [
+                
+            ]
+        },
+        {
+            "spfKey": "MfgName",
+            "cartKey": "manufacturer",
+            "prefix": "",
+            "spfSubKeys": [
+                
+            ]
+        },
+        {
+            "spfKey": "CategoryParentName",
+            "cartKey": "categories",
+            "prefix": "",
+            "spfSubKeys": [
+                "CategoryName"                
+            ]
+        },
+        {
+            "spfKey": "Thumbnail",
+            "cartKey": "thumbnail",
+            "prefix": "assets/images/thumbnails/",
+            "spfSubKeys": [
+                
+            ]
+        }
+
+    ]
+}
