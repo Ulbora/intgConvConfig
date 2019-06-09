@@ -41,6 +41,7 @@ type ConfDir struct {
 type SpfConfFile struct {
 	CfDirectory string     `json:"cfDirectory"`
 	Distributor string     `json:"distributor"`
+	CartHeader  []string   `json:"cartHeader"`
 	SpfFields   []SpfField `json:"spfFields"`
 }
 
