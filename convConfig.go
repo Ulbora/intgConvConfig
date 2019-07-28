@@ -54,4 +54,5 @@ type SpfField struct {
 	SpfSubKeys      []string `json:"spfSubKeys"`
 	SpfAltKey       string   `json:"spfAltKey"`
 	CartPriceFactor string   `json:"cartPriceFactor"`
+	SpfCost         string   `json:"spfCost"`
 }
