@@ -27,7 +27,8 @@
             "spfSubKeys": [
                 
             ],
-            "spfAltKey": "TestAlt"
+            "spfAltKey": "TestAlt",
+            "cartPriceFactor": "1.5"
         },
         {
             "spfKey": "MfgName",
