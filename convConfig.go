@@ -52,4 +52,5 @@ type SpfField struct {
 	Required   bool     `json:"required"`
 	Prefix     string   `json:"prefix"`
 	SpfSubKeys []string `json:"spfSubKeys"`
+	SpfAltKey  string   `json:"spfAltKey"`
 }
