@@ -29,7 +29,8 @@
             ],
             "spfAltKey": "TestAlt",
             "cartPriceFactor": "1.5",
-            "spfCost" : "Price"
+            "spfCost" : "Price",
+            "costMarkupFactor": "1.2"
         },
         {
             "spfKey": "MfgName",

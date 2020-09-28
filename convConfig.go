@@ -47,12 +47,13 @@ type SpfConfFile struct {
 
 //SpfField SpfField
 type SpfField struct {
-	SpfKey          string   `json:"spfKey"`
-	CartKey         string   `json:"cartKey"`
-	Required        bool     `json:"required"`
-	Prefix          string   `json:"prefix"`
-	SpfSubKeys      []string `json:"spfSubKeys"`
-	SpfAltKey       string   `json:"spfAltKey"`
-	CartPriceFactor string   `json:"cartPriceFactor"`
-	SpfCost         string   `json:"spfCost"`
+	SpfKey           string   `json:"spfKey"`
+	CartKey          string   `json:"cartKey"`
+	Required         bool     `json:"required"`
+	Prefix           string   `json:"prefix"`
+	SpfSubKeys       []string `json:"spfSubKeys"`
+	SpfAltKey        string   `json:"spfAltKey"`
+	CartPriceFactor  string   `json:"cartPriceFactor"`
+	CostMarkupFactor string   `json:"costMarkupFactor"`
+	SpfCost          string   `json:"spfCost"`
 }
